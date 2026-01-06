@@ -170,7 +170,6 @@ def encrypt_file(method, file_name):
         original_code = open(file_name, "r", encoding='latin-1').read().encode('utf-8')
     
     header = "\n\n"
-    footer = "\n\n"
     try:
         if method == "base64":
             encoded = b64(original_code)[::-1]
